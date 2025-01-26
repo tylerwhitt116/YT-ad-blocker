@@ -10,8 +10,9 @@ const adDomains = [
 let adsBlockedCount = 0;
 
 // Listen for web requests to ad-related domains
-chrome.webRequest.onBeforeRequest.addListener(
+chrome.declarativeNetRequest.onRuleMatchedDebug.addListener(
   (details) => {
+    console.log("Blocked a request:", details);
     adsBlockedCount += 1; // Increment count when an ad is blocked
 
     // Save the count to Chrome storage
@@ -24,6 +25,9 @@ chrome.webRequest.onBeforeRequest.addListener(
 );
 
 // Initialize blocked ads count on extension load
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.local.set({adsBlocked: 0})
+});
 chrome.runtime.onInstalled.addListener(() => {
   console.log("Ad blocker installed successfully!");
 });
