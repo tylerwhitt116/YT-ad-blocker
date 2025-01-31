@@ -3,7 +3,7 @@
     "name": "Enhanced YouTube Ad Blocker",
     "version": "1.1",
     "description": "Blocks YouTube ads and tracks the number of ads blocked.",
-    "permissions": ["declarativeNetRequest", "storage"],
+    "permissions": ["declarativeNetRequest", "storage", "activeTab"],
     "host_permissions": ["*://*.youtube.com/*", "*://*.doubleclick.net/*", "*://*.googlesyndication.com/*"],
     "declarative_net_request": {
     "rule_resources": [
@@ -15,8 +15,7 @@
     ]
   },
     "background": {
-      "service_worker": "background.js",
-      "type":"module"
+      "service_worker": "background.js"
     },
     "content_scripts": [
       {

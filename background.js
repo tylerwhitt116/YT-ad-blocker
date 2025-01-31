@@ -28,7 +28,4 @@ chrome.declarativeNetRequest.onRuleMatchedDebug.addListener(
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.local.set({adsBlocked: 0})
 });
-chrome.runtime.onInstalled.addListener(() => {
-  console.log("Ad blocker installed successfully!");
-});
 

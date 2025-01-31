@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ad Blocker Settings</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 10px; }
-    h2 { font-size: 18px; margin-bottom: 10px; }
-    button { padding: 8px 15px; margin-top: 10px; cursor: pointer; }
-    .stats { margin-top: 10px; }
-  </style>
+  <title>Ad Blocker</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h2>YouTube Ad Blocker</h2>
-  <div class="stats">
-    <p>Ads Blocked: <span id="ads-blocked">0</span></p>
+  <div class="popup-container">
+    <h1>YouTube Ad Blocker</h1>
+    <div class="stats">
+      <p class="stats-text">Ads Blocked:</p>
+      <p class="stats-value" id="ads-blocked">0</p>
+    </div>
+    <button id="reset" class="btn-reset">Reset Counter</button>
   </div>
-  <button id="reset">Reset Counter</button>
   <script src="popup.js"></script>
 </body>
 </html>
