@@ -67,5 +67,5 @@ If you like this project, ⭐ **star** this repository to help others discover i
 
 ---
 
-🔗 **GitHub Repository:** [https://github.com/yourusername/youtube-ad-blocker](https://github.com/tylerwhitt116/YT-ad-blocker)
+🔗 **GitHub Repository:** [https://github.com/tylerwhitt116/YT-ad-blocker](https://github.com/tylerwhitt116/YT-ad-blocker)
 
